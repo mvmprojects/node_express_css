@@ -1,0 +1,33 @@
+nav.mainnav {
+/*	display: block;*/
+	width: 100vw;
+	color:#EEEEEE;
+	background-color:#232327;	
+	/*the h1 with the text "Express" still has its own default margin that will expand the nav bar*/	
+}
+li, .mainli {
+ 	list-style-type: none; /*remove bullet-point dots */
+ 	/*display: inline;  --- instead using "display: flex;" in ul {} */
+ 	margin: 0 2vw;
+ 	/*font-size: 3vh;  font-size will be 3% of the height of the viewport */
+ 	align-self: center; /* please stop floating to the top */
+}
+a, .mainli {
+	color:#DEDEDE;
+ 	text-decoration: none; /*remove underline from links */
+ 	/*padding: 2vw;*/
+}
+ul, .mainli { /*note: don't move the order around too much for li and ul styles in this file */
+ 	margin: 0;
+ 	padding: 0;
+ 	display: flex; /*display those links in nav bar in a row*/
+}
+h1.maintitle {
+	color: white;
+}
+div.maindiv {
+	margin: 2vw;
+}
+body {
+ 	margin: 0; /*prevent nav bar from floating off the top and side of the screen*/
+}
